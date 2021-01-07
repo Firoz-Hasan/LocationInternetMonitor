@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 public class LocationChangeReceiver extends BroadcastReceiver {
 
-    private static final String TAG = "MyLocationReceiver";
+    private static final String TAG = "LocationChangeReceiver";
     private Context context;
 
     public LocationChangeReceiver(Context context) {

@@ -20,7 +20,7 @@ public class NetworkChangeReceiver extends BroadcastReceiver {
             if (isOnline(context)) {
                 Toast.makeText(context, "internet is enabled", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(context, "internet is disaabled", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "internet is disabled", Toast.LENGTH_SHORT).show();
             }
         } catch (NullPointerException e) {
             e.printStackTrace();
@@ -29,7 +29,6 @@ public class NetworkChangeReceiver extends BroadcastReceiver {
 
 
     public static boolean isOnline(Context context) {
-
         try {
             ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
             NetworkInfo netInfo = cm.getActiveNetworkInfo();
