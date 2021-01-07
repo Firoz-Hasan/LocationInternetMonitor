@@ -24,6 +24,12 @@ public class MonitorGpsInternet {
         this._dateTime = _dateTime;
     }
 
+    public MonitorGpsInternet(String _monitorName, String _monitorStatus, String _dateTime) {
+        this._monitorName = _monitorName;
+        this._monitorStatus = _monitorStatus;
+        this._dateTime = _dateTime;
+    }
+
     public int get_empId() {
         return _empId;
     }
